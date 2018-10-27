@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>System - RSForm! PayPing</name>
+	<title>PayPing gateway for RSForm</title>
+	<author>Erfan Ebrahimi</author>
+	<creationDate>Oct 2018</creationDate>
+	<copyright>Copyright 2018 Erfan Ebrahimi</copyright>
+	<license>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL version 2</license>
+	<authorEmail>me@erfanebrahimi.ir</authorEmail>
+	<authorUrl>http://erfanebrahimi.ir</authorUrl>
+	<version>1.0.0.0</version>
+	<description>پلاگین پرداخت اراس فرم برای پی‌پینگ</description>
+	<scriptfile>script.php</scriptfile>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/mysql/install.sql</file>
+		</sql>
+	</install>
+	<files>
+		<folder>sql</folder>
+		<filename plugin="rsfppayping">rsfppayping.php</filename>
+		<filename plugin="rsfppayping">payping_inputcheck.php</filename>
+		<filename>index.html</filename>
+	</files>
+</extension>
+
