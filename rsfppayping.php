@@ -218,7 +218,7 @@ class plgSystemRSFPPayping extends JPlugin {
 		<div id="page-payping" class="com-rsform-css-fix">
 			<table  class="admintable">
 				<tr>
-					<td width="200" style="width: 200px;" align="right" class="key"><label for="api"><?php echo 'مرچند کد'; ?></label></td>
+					<td width="200" style="width: 200px;" align="right" class="key"><label for="api"><?php echo 'توکن : '; ?></label></td>
 					<td><input type="text" name="rsformConfig[payping.api]" value="<?php echo RSFormProHelper::htmlEscape(RSFormProHelper::getConfig('payping.api')); ?>" size="100" maxlength="64"></td>
 				</tr>
 				<tr>
